@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+
 /* base styles */
 * {
-  margin: 0;
+  /* margin: 0; */
   font-family: "Quicksand";
   color: #333;
 }
+/* .content{
+  font-family: "Quicksand";
+  color: #333;
+  height: 600px;
+} */
 .navbar {
   padding: 20px;
   display: flex;
@@ -94,6 +100,23 @@
   display: block;
 }
 .create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.not-found{
+  text-align: center;
+  font-family: "Quicksand";
+  color: #333;
+  margin-top: auto;
+}
+.not-found a{
+  text-decoration: none;
+  margin-top: auto;
+  text-decoration: none;
   background: #f1356d;
   color: #fff;
   border: 0;

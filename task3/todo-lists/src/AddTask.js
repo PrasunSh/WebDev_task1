@@ -1,16 +1,34 @@
 import { useState } from "react";
 import { Button } from 'react-bootstrap';
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useContext } from "react";
+import React from 'react';
+
 
 const AddTask = () => {
+
+
     const [title, setTitle] = useState('');
-    const [body, setBody] = useState('');
-    // const history = useHistory();
+    const [description, setDescription] = useState('');
+    const history = useHistory();
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const task = { title, description };
+    
+        fetch('http://localhost:8000/tasks/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(task)
+        }).then(() => {
+          history.push('/');
+        })
+      }
 
     return ( 
-        <div className="addtask">
-            <form >
+        <div className="addtask ">
+            <form onSubmit={handleSubmit}>
                 <label>Task</label>
                 <input 
                 type="text" 
@@ -21,9 +39,9 @@ const AddTask = () => {
 
                 <label>Task description</label>
                 <textarea
-                value={body}
+                value={description}
                 placeholder="Add a task description! (optional)"
-                onChange={(e) => setBody(e.target.value)}>
+                onChange={(e) => setDescription(e.target.value)}>
                 </textarea>
                 <button>Add Task</button>
             </form>

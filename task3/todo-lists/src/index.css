@@ -18,23 +18,125 @@
   padding-right: 20px;
   height: 450px;
   margin-top: 40px;
-  margin-left: 70px;
+  margin-left: 140px;
   border: solid;
   border-color: rgb(229, 229, 229);
   border-radius: 20px;
   width: 500px;
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 .listarea p {
   font-family: "Rubik Doodle Shadow";
   font-size: 20px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
 }
 
-.addtask{
-  margin: auto;
+.taskdesc{
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 500px;
+  background-color: rgb(253, 253, 253);
+  border: solid;
+  border-color: rgb(229, 229, 229);
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 200px;
+  text-align: center;
+  /* padding: 10px 0px; */
+}
+.delete{
+  margin-top: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list{
+  margin: 7px 0px;
+}
 
+.list a{
+  text-decoration: none;
+  color: black;
+}
+.delete button{
+  /* margin-top: 40px; */
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  height: 27px;
+  background-color: rgba(255, 255, 255, 0.612);
+  font-family: "Rubik Maps";
+}
+.delete button:hover{
+  background-color: rgba(137, 137, 137, 0.423);
+
+}
+
+.addtaskhome{
+  /* margin-top: 40px; */
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.addtaskhome p{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px;
+  margin-top: auto;
+}
+.addtaskhome label{
+  display: block;
+  margin: 10px 10px;
+  font-size: 20px;
+  font-family: "Paytone One";
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #677173;
+  margin: 20px auto;
+}
+.addtaskhome input{
+  height: 30px;
+  width: 300px;
+  border-radius: 8px;
+  padding: 5px 5px;
+}
+
+.addtaskhome textarea{
+  height: 300px;
+  width: 300px;
+  border-radius: 8px;
+  padding: 5px 5px;
+}
+.addtaskhome button{
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.612);
+  font-family: "Rubik Maps";
+}
+
+.addtaskhome button:hover{
+  background-color: rgba(255, 255, 255, 0.423);
+
+}
+
+.addtaskhome a{
+  text-decoration: none;
 }
 
 .Feat{
@@ -45,7 +147,7 @@
 .header{
   height: 100px;
   text-shadow: 2px 2px #595959;
-  margin-left: 150px;
+  margin-left: 270px;
   margin-right: auto;
   display: flex;
   justify-content: center;
@@ -66,6 +168,10 @@
   font-size: 65px;
 }
 
+.header a{
+  text-decoration: none;
+  color: white;
+}
 /* .App{
 
   width: 100%;
@@ -85,7 +191,7 @@ body {
 
 .navbar{
   margin-left: auto;
-  margin-right: 140px;
+  margin-right: 220px;
   /* text-align: center; */
   justify-content: space-around;
   align-items: center;
@@ -98,6 +204,15 @@ body {
   justify-content: space-around;
   margin: 20px 20px;
 }
+.navbarElement a{
+  text-decoration: none;
+  color: black;
+}
+
+.addtask{
+  margin: auto;
+
+}
 .addtask{
   /* margin-top: 40px; */
   display: block  ;
@@ -105,12 +220,12 @@ body {
 
 .addtask label{
   display: block;
-  margin: 10px 10px;
+  margin: 10px auto;
   font-size: 20px;
   font-family: "Paytone One";
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px #677173;
-  margin: 20px auto;
+  /* margin: 20px auto; */
 }
 
 .addtask input{
@@ -140,4 +255,8 @@ body {
 .addtask button:hover{
   background-color: rgba(255, 255, 255, 0.423);
 
+}
+
+.title h2{
+  padding: 20px auto;
 }

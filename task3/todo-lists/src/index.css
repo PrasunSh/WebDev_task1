@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Train+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Permanent+Marker&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Permanent+Marker&family=Playfair+Display&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 .content{
   display: flex;
@@ -259,4 +262,8 @@ body {
 
 .title h2{
   padding: 20px auto;
+}
+
+.hieader p{
+  font-family: "Playfair Display:wght@700";
 }

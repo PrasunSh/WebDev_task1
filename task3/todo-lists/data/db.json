@@ -1,9 +1,3 @@
 {
-  "tasks": [
-    {
-      "title": "I must learn React",
-      "description": "Lavde react yaad kar",
-      "id": 1
-    }
-  ]
+  "tasks": []
 }

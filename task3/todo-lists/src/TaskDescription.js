@@ -4,7 +4,11 @@ import React from "react";
 
 const TaskDescription = () => {
   const { id } = useParams();
-  const { data: task, error, isPending } = useFetch('http://localhost:8000/tasks/' + id);
+  const { data: task, error, isPending} = useFetch('http://localhost:8000/tasks/' + id);
+
+  // const { data: completedtask, error:error2, isPending:pend2 } = useFetch('http://localhost:8000/completedtasks/');
+
+
   const history = useHistory();
 
   const handleClick = () => {
@@ -14,6 +18,24 @@ const TaskDescription = () => {
       history.push('/');
     }) 
   }
+
+  // const DeleteUpdation = (e) =>{
+  //   e.preventDefault();
+  //   const task = { title, description };
+
+  //   fetch('http://localhost:8000/deletedtasks/', {
+  //     method: 'POST',
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(task)
+  //   }).then(() => {
+  //     history.push('/');
+  //   })
+  // }
+
+  // const exeFunc = () => {
+  //   handleClick();
+  //   handleDelete();
+  // }
 
   return (
     <div className="taskdesc">
